@@ -1,0 +1,40 @@
+# Macallan Django App - Template
+
+This repository is a ready-to-run template for the Macallan form + Django admin test.
+
+## Requirements
+- Python 3.10+
+- pip
+- (optional) Docker & docker-compose
+
+## Quick start (local, no Docker)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py create_readonly_group
+python manage.py runserver
+```
+
+- Open the public form: http://localhost:8000/macanall  (typo in older versions — correct path is `/macallan/`)
+- Admin: http://localhost:8000/admin/
+
+## Docker (optional)
+
+Use the included Dockerfile and docker-compose.yml to run via Docker.
+
+## Internationalization
+Strings in code use `gettext_lazy`. To create Portuguese translations:
+
+```bash
+django-admin makemessages -l pt_BR
+# edit locale/pt_BR/LC_MESSAGES/django.po
+django-admin compilemessages
+```
+
+## Notes
+- The templates use IMask via CDN for CPF/phone masks and fetch ViaCEP for address autofill.
+- CPF and phone are stored in DB without mask (only digits).

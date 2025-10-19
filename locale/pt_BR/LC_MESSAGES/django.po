@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Macallan Django App\n"
+"POT-Creation-Date: 2025-10-16 00:00+0000\n"
+"PO-Revision-Date: 2025-10-16 00:00+0000\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: customers/models.py:4
+msgid "customer name"
+msgstr "nome do cliente"
+
+#: customers/models.py:5
+msgid "email"
+msgstr "e-mail"
+
+#: customers/models.py:6
+msgid "vat id"
+msgstr "CPF"
+
+#: customers/models.py:7
+msgid "phone number"
+msgstr "telefone"
+
+#: customers/models.py:8
+msgid "zipcode"
+msgstr "CEP"
+
+#: customers/models.py:9
+msgid "street"
+msgstr "rua"
+
+#: customers/models.py:10
+msgid "street number"
+msgstr "número"
+
+#: customers/models.py:11
+msgid "complement"
+msgstr "complemento"
+
+#: customers/models.py:12
+msgid "district"
+msgstr "bairro"
+
+#: customers/models.py:13
+msgid "city"
+msgstr "cidade"
+
+#: customers/models.py:14
+msgid "region"
+msgstr "estado (UF)"
+
+#: customers/forms.py:21
+msgid "Informe nome completo"
+msgstr "Informe nome completo"
+
+#: customers/forms.py:27
+msgid "Informe um e-mail válido"
+msgstr "Informe um e-mail válido"
+
+#: customers/forms.py:34
+msgid "Informe um CPF válido"
+msgstr "Informe um CPF válido"
+
+#: customers/forms.py:41
+msgid "Informe um telefone válido"
+msgstr "Informe um telefone válido"
+
+#: customers/forms.py:48
+msgid "Informe um CEP válido"
+msgstr "Informe um CEP válido"
+
+#: customers/templates/customers/macallan_form.html:10
+msgid "Enviar"
+msgstr "Enviar"
+
+#: customers/templates/customers/macallan_success.html:8
+msgid "Success"
+msgstr "Sucesso"
+
+#: customers/templates/customers/macallan_success.html:12
+msgid "Obrigado — sua resposta foi recebida!"
+msgstr "Obrigado — sua resposta foi recebida!"
+
+#: customers/templates/customers/macallan_success.html:13
+msgid "We will process the delivery information."
+msgstr "Iremos processar as informações de entrega."
