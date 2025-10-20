@@ -23,7 +23,7 @@ def macallan_success(request):
     return render(request, 'customers/macallan_success.html')
 
 @permission_required('customers.view_customer', login_url='/admin/login/', raise_exception=False)
-def customers_list(request):
+def clients_list(request):
     qs = Customer.objects.all().order_by('-created_at')
     q = request.GET.get('q', '').strip()
     name = request.GET.get('name', '').strip()
@@ -54,4 +54,4 @@ def customers_list(request):
         'q': q,
         'regions': Customer.REGION_CHOICES,
     }
-    return render(request, 'customers/customers_list.html', context)
+    return render(request, 'customers/clients_list.html', context)
